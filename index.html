@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cheran's Canvas</title>
+    <style>
+        /* This is CSS. It styles the look of the page */
+        body {
+            margin: 0;
+            overflow: hidden; /* Stop scrolling */
+            background-color: #f0f0f0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        canvas {
+            background-color: white;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+    </style>
+</head>
+<body>
+    <div class="toolbar" style="position: absolute; top: 10px; left: 10px; background: white; padding: 10px; border-radius: 8px; box-shadow: 0 2px 5px rgba(0,0,0,0.2);">
+    <label for="colorPicker">Color: </label>
+    <input type="color" id="colorPicker" value="#000000">
+    
+    <label for="widthPicker">Size: </label>
+    <input type="range" id="widthPicker" min="1" max="20" value="5">
+    </div>
+
+    <canvas id="drawing-board" width="800" height="600"></canvas>
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
