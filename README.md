@@ -1,5 +1,5 @@
 
-#Real-Time Collaborative Whiteboard
+## Real-Time Collaborative Whiteboard
 
 A lightweight, real-time drawing application that allows multiple users to draw on a shared canvas simultaneously. Built using **Node.js**, **Express**, and **Socket.IO**.
 
